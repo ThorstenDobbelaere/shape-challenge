@@ -17,22 +17,22 @@ public class Main {
         composite2.addShape(composite1);
         drawing.addShape(composite2);
 
-        double totalSurface = drawing.getTotalSurface();;
+        double totalSurface = drawing.getTotalSurface();
         System.out.println("Total surface is " + totalSurface);
 
         // TODO How would you add a "Square" as an additional shape?
 
         // TODO implement a HTML generator for the drawing
         // DO NOT ADD toHtml() methods on the Shape classes!!!
-        HtmlGeneratorTool htmlGeneratorTool = new HtmlGeneratorTool();
-        String html = drawing.applyToolAndGetResult(htmlGeneratorTool);
-        System.out.println("Html is " + html);
+        // HtmlGeneratorTool htmlGeneratorTool = new HtmlGeneratorTool();
+        // String html = drawing.applyToolAndGetResult(htmlGeneratorTool);
+        // System.out.println("Html is " + html);
 
         // TODO implement a Circumference calculator for the drawing
         // DO NOT ADD getCircumference() methods on the Shape classes!!!
-        CircumferenceCalculatorTool circumferenceCalculatorTool = new CircumferenceCalculatorTool();
-        double totalCircumference = drawing.applyToolAndGetResult(circumferenceCalculatorTool);
-        System.out.println("Total circumference is " + totalCircumference);
+        // CircumferenceCalculatorTool circumferenceCalculatorTool = new CircumferenceCalculatorTool();
+        // double totalCircumference = drawing.applyToolAndGetResult(circumferenceCalculatorTool);
+        // System.out.println("Total circumference is " + totalCircumference);
 
         // DO NOT USE Casting
         // DO NOT USE instanceOf !!!

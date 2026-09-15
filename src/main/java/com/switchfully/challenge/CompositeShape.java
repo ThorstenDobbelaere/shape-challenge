@@ -5,7 +5,7 @@ import java.util.List;
 
 public class CompositeShape extends Shape {
 
-    private List<Shape> shapeList = new ArrayList<>();
+    private final List<Shape> shapeList = new ArrayList<>();
 
     public void addShape(Shape shape) {
         shapeList.add(shape);
@@ -13,7 +13,8 @@ public class CompositeShape extends Shape {
 
     @Override
     public double getSurface() {
-        // TODO implement this method
-        return 0;
+        return shapeList.stream()
+                .mapToDouble(Shape::getSurface)
+                .sum();
     }
 }

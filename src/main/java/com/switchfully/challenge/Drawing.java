@@ -1,8 +1,11 @@
 package com.switchfully.challenge;
 
-public class Drawing {
+import java.util.ArrayList;
+import java.util.List;
 
+public class Drawing {
     private String name;
+    private final List<Shape> shapeList = new ArrayList<>();
 
     public Drawing(String name) {
         this.name = name;
@@ -17,11 +20,10 @@ public class Drawing {
     }
 
     public void addShape(Shape shape) {
-        //TODO implement this method
+        shapeList.add(shape);
     }
 
     public double getTotalSurface() {
-        //TODO implement this method
-        return 0;
+        return shapeList.stream().mapToDouble(Shape::getSurface).sum();
     }
 }
