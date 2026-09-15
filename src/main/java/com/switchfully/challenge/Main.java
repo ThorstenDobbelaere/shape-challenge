@@ -3,6 +3,7 @@ package com.switchfully.challenge;
 import com.switchfully.challenge.shapes.Circle;
 import com.switchfully.challenge.shapes.CompositeShape;
 import com.switchfully.challenge.shapes.Rectangle;
+import com.switchfully.challenge.shapes.Square;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,11 +21,11 @@ public class Main {
         composite2.addShape(c1);
         composite2.addShape(composite1);
         drawing.addShape(composite2);
+        Square square = new Square(4);
+        drawing.addShape(square);
 
         double totalSurface = drawing.getTotalSurface();
         System.out.println("Total surface is " + totalSurface);
-
-        // TODO How would you add a "Square" as an additional shape?
 
         // TODO implement a HTML generator for the drawing
         // DO NOT ADD toHtml() methods on the Shape classes!!!
