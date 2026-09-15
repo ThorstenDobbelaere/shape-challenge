@@ -1,6 +1,7 @@
 package com.switchfully.challenge.shapes.impl;
 
 import com.switchfully.challenge.shapes.Shape;
+import com.switchfully.challenge.visitors.ShapeVisitor;
 
 public class Rectangle extends Shape {
 
@@ -23,6 +24,10 @@ public class Rectangle extends Shape {
 
     public double getWidth() {
         return width;
+    }
+
+    public <T> T accept(ShapeVisitor<T> visitor) {
+        return visitor.visit(this);
     }
 
     public void setWidth(double width) {
