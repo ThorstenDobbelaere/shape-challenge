@@ -1,6 +1,7 @@
 package com.switchfully.challenge;
 
 import com.switchfully.challenge.shapes.Shape;
+import com.switchfully.challenge.visitors.ShapeVisitor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +20,13 @@ public class Drawing {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public <T> T applyToolAndGetResult(ShapeVisitor<T> tool) {
+        for (Shape shape : shapeList) {
+            shape.accept(tool);
+        }
+        return tool.getResult();
     }
 
     public void addShape(Shape shape) {
