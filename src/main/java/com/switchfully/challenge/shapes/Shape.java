@@ -6,5 +6,5 @@ public abstract class Shape {
 
     public abstract double getSurface();
 
-    public abstract  <T> T accept(ShapeVisitor<T> visitor);
+    public abstract  <T> void accept(ShapeVisitor<T> visitor);
 }

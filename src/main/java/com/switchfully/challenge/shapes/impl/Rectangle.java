@@ -26,8 +26,8 @@ public class Rectangle extends Shape {
         return width;
     }
 
-    public <T> T accept(ShapeVisitor<T> visitor) {
-        return visitor.visit(this);
+    public <T> void accept(ShapeVisitor<T> visitor) {
+        visitor.visit(this);
     }
 
     public void setWidth(double width) {

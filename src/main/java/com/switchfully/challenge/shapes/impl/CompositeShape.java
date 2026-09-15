@@ -14,8 +14,8 @@ public class CompositeShape extends Shape {
         shapeList.add(shape);
     }
 
-    public <T> T accept(ShapeVisitor<T> visitor) {
-        return visitor.visit(this);
+    public <T> void accept(ShapeVisitor<T> visitor) {
+        visitor.visit(this);
     }
 
     @Override

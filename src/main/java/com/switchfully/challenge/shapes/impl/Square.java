@@ -7,7 +7,7 @@ public class Square extends Rectangle{
         super(length, length);
     }
 
-    public <T> T accept(ShapeVisitor<T> visitor) {
-        return visitor.visit(this);
+    public <T> void accept(ShapeVisitor<T> visitor) {
+        visitor.visit(this);
     }
 }
