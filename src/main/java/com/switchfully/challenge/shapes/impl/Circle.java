@@ -1,4 +1,6 @@
-package com.switchfully.challenge.shapes;
+package com.switchfully.challenge.shapes.impl;
+
+import com.switchfully.challenge.shapes.Shape;
 
 public class Circle extends Shape {
 

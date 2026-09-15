@@ -1,4 +1,4 @@
-package com.switchfully.challenge.shapes;
+package com.switchfully.challenge.shapes.impl;
 
 public class Square extends Rectangle{
     public Square(double length) {

@@ -1,9 +1,9 @@
 package com.switchfully.challenge;
 
-import com.switchfully.challenge.shapes.Circle;
-import com.switchfully.challenge.shapes.CompositeShape;
-import com.switchfully.challenge.shapes.Rectangle;
-import com.switchfully.challenge.shapes.Square;
+import com.switchfully.challenge.shapes.impl.Circle;
+import com.switchfully.challenge.shapes.impl.CompositeShape;
+import com.switchfully.challenge.shapes.impl.Rectangle;
+import com.switchfully.challenge.shapes.impl.Square;
 
 public class Main {
     public static void main(String[] args) {
