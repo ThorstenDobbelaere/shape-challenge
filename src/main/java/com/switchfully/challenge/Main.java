@@ -1,5 +1,9 @@
 package com.switchfully.challenge;
 
+import com.switchfully.challenge.shapes.Circle;
+import com.switchfully.challenge.shapes.CompositeShape;
+import com.switchfully.challenge.shapes.Rectangle;
+
 public class Main {
     public static void main(String[] args) {
         Drawing drawing = new Drawing("My wonderful drawing");

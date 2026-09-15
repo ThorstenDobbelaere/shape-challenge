@@ -1,4 +1,4 @@
-package com.switchfully.challenge;
+package com.switchfully.challenge.shapes;
 
 public abstract class Shape {
 

@@ -1,5 +1,7 @@
 package com.switchfully.challenge;
 
+import com.switchfully.challenge.shapes.Shape;
+
 import java.util.ArrayList;
 import java.util.List;
 
