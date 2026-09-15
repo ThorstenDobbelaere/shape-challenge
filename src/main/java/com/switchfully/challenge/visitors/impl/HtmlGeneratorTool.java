@@ -77,18 +77,12 @@ public class HtmlGeneratorTool implements ShapeVisitor<String> {
     }
 
     private void addSelfClosingTag(String name, Map<String, Object> properties) {
-        builder.repeat(spacing, openTags.size());
-        builder.append("<%s".formatted(name));
-        builder.append(System.lineSeparator());
-
+        addLine("<%s".formatted(name));
         for (String key: properties.keySet()) {
             builder.repeat(spacing, openTags.size() + 1);
             builder.append("%s = %s".formatted(key, properties.get(key)));
             builder.append(System.lineSeparator());
         }
-
-        builder.repeat(spacing, openTags.size());
-        builder.append("/>");
-        builder.append(System.lineSeparator());
+        addLine("/>");
     }
 }
