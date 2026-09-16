@@ -1,7 +1,7 @@
 package com.switchfully.challenge.shapes.impl;
 
 import com.switchfully.challenge.shapes.Shape;
-import com.switchfully.challenge.visitors.ShapeVisitor;
+import com.switchfully.challenge.visitors.ShapeTool;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,8 +14,8 @@ public class CompositeShape extends Shape {
         shapeList.add(shape);
     }
 
-    public <T> void accept(ShapeVisitor<T> visitor) {
-        visitor.visit(this, shapeList);
+    public <T> void accept(ShapeTool<T> shapeTool) {
+        shapeTool.processComposite(this, shapeList);
     }
 
     @Override

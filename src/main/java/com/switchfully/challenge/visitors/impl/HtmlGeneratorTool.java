@@ -5,13 +5,13 @@ import com.switchfully.challenge.shapes.impl.Circle;
 import com.switchfully.challenge.shapes.impl.CompositeShape;
 import com.switchfully.challenge.shapes.impl.Rectangle;
 import com.switchfully.challenge.shapes.impl.Square;
-import com.switchfully.challenge.visitors.ShapeVisitor;
+import com.switchfully.challenge.visitors.ShapeTool;
 
 import java.util.List;
 import java.util.Map;
 import java.util.Stack;
 
-public class HtmlGeneratorTool implements ShapeVisitor<String> {
+public class HtmlGeneratorTool implements ShapeTool<String> {
     private final StringBuilder builder = new StringBuilder();
     private final Stack<String> openTags = new Stack<>();
     private final String spacing = " ".repeat(2);
@@ -21,7 +21,7 @@ public class HtmlGeneratorTool implements ShapeVisitor<String> {
     }
 
     @Override
-    public void visit(Circle circle) {
+    public void processCircle(Circle circle) {
         addSelfClosingTag("circle", Map.of(
                 "radius", circle.getRadius(),
                 "surface", circle.getSurface()
@@ -29,7 +29,7 @@ public class HtmlGeneratorTool implements ShapeVisitor<String> {
     }
 
     @Override
-    public void visit(CompositeShape compositeShape, List<Shape> shapeList) {
+    public void processComposite(CompositeShape compositeShape, List<Shape> shapeList) {
         openTag("composite");
         for (Shape shape : shapeList) {
             shape.accept(this);
@@ -38,7 +38,7 @@ public class HtmlGeneratorTool implements ShapeVisitor<String> {
     }
 
     @Override
-    public void visit(Rectangle rectangle) {
+    public void processRectangle(Rectangle rectangle) {
         addSelfClosingTag("rectangle", Map.of(
                 "width", rectangle.getWidth(),
                 "length", rectangle.getLength(),
@@ -47,7 +47,7 @@ public class HtmlGeneratorTool implements ShapeVisitor<String> {
     }
 
     @Override
-    public void visit(Square square) {
+    public void processSquare(Square square) {
         addSelfClosingTag("square", Map.of(
                 "size", square.getLength(),
                 "surface", square.getSurface()

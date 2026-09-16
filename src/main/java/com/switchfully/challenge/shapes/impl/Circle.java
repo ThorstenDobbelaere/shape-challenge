@@ -1,7 +1,7 @@
 package com.switchfully.challenge.shapes.impl;
 
 import com.switchfully.challenge.shapes.Shape;
-import com.switchfully.challenge.visitors.ShapeVisitor;
+import com.switchfully.challenge.visitors.ShapeTool;
 
 public class Circle extends Shape {
 
@@ -19,8 +19,8 @@ public class Circle extends Shape {
         this.radius = radius;
     }
 
-    public <T> void accept(ShapeVisitor<T> visitor) {
-        visitor.visit(this);
+    public <T> void accept(ShapeTool<T> shapeTool) {
+        shapeTool.processCircle(this);
     }
 
     @Override

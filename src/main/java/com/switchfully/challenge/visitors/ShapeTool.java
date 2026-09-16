@@ -8,11 +8,11 @@ import com.switchfully.challenge.shapes.impl.Square;
 
 import java.util.List;
 
-public interface ShapeVisitor <R>{
-    void visit(Circle circle);
-    void visit(CompositeShape compositeShape, List<Shape> shapeList);
-    void visit(Rectangle rectangle);
-    void visit(Square square);
+public interface ShapeTool<R>{
+    void processCircle(Circle circle);
+    void processComposite(CompositeShape compositeShape, List<Shape> shapeList);
+    void processRectangle(Rectangle rectangle);
+    void processSquare(Square square);
 
     R getResult();
 }

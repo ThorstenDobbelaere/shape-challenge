@@ -1,10 +1,10 @@
 package com.switchfully.challenge.shapes;
 
-import com.switchfully.challenge.visitors.ShapeVisitor;
+import com.switchfully.challenge.visitors.ShapeTool;
 
 public abstract class Shape {
 
     public abstract double getSurface();
 
-    public abstract  <T> void accept(ShapeVisitor<T> visitor);
+    public abstract  <T> void accept(ShapeTool<T> shapeTool);
 }
