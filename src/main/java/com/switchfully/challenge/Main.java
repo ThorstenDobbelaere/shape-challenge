@@ -1,11 +1,11 @@
 package com.switchfully.challenge;
 
-import com.switchfully.challenge.shapes.impl.Circle;
-import com.switchfully.challenge.shapes.impl.CompositeShape;
-import com.switchfully.challenge.shapes.impl.Rectangle;
-import com.switchfully.challenge.shapes.impl.Square;
-import com.switchfully.challenge.tools.impl.CircumferenceCalculatorTool;
-import com.switchfully.challenge.tools.impl.HtmlGeneratorTool;
+import com.switchfully.challenge.domain.shapes.Circle;
+import com.switchfully.challenge.domain.shapes.CompositeShape;
+import com.switchfully.challenge.domain.shapes.Rectangle;
+import com.switchfully.challenge.domain.shapes.Square;
+import com.switchfully.challenge.domain.tools.CircumferenceCalculatorTool;
+import com.switchfully.challenge.domain.tools.HtmlGeneratorTool;
 
 public class Main {
     public static void main(String[] args) {

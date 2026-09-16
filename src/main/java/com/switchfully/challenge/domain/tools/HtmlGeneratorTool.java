@@ -1,11 +1,11 @@
-package com.switchfully.challenge.tools.impl;
+package com.switchfully.challenge.domain.tools;
 
-import com.switchfully.challenge.shapes.Shape;
-import com.switchfully.challenge.shapes.impl.Circle;
-import com.switchfully.challenge.shapes.impl.CompositeShape;
-import com.switchfully.challenge.shapes.impl.Rectangle;
-import com.switchfully.challenge.shapes.impl.Square;
-import com.switchfully.challenge.tools.ShapeTool;
+import com.switchfully.challenge.domain.Shape;
+import com.switchfully.challenge.domain.shapes.Circle;
+import com.switchfully.challenge.domain.shapes.CompositeShape;
+import com.switchfully.challenge.domain.shapes.Rectangle;
+import com.switchfully.challenge.domain.shapes.Square;
+import com.switchfully.challenge.domain.ShapeTool;
 
 import java.util.List;
 import java.util.Map;

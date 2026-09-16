@@ -1,7 +1,7 @@
-package com.switchfully.challenge.shapes.impl;
+package com.switchfully.challenge.domain.shapes;
 
-import com.switchfully.challenge.shapes.Shape;
-import com.switchfully.challenge.tools.ShapeTool;
+import com.switchfully.challenge.domain.Shape;
+import com.switchfully.challenge.domain.ShapeTool;
 
 import java.util.ArrayList;
 import java.util.List;
