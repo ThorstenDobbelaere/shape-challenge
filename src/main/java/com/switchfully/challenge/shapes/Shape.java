@@ -1,6 +1,6 @@
 package com.switchfully.challenge.shapes;
 
-import com.switchfully.challenge.visitors.ShapeTool;
+import com.switchfully.challenge.tools.ShapeTool;
 
 public abstract class Shape {
 

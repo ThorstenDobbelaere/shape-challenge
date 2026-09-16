@@ -4,8 +4,8 @@ import com.switchfully.challenge.shapes.impl.Circle;
 import com.switchfully.challenge.shapes.impl.CompositeShape;
 import com.switchfully.challenge.shapes.impl.Rectangle;
 import com.switchfully.challenge.shapes.impl.Square;
-import com.switchfully.challenge.visitors.impl.CircumferenceCalculatorTool;
-import com.switchfully.challenge.visitors.impl.HtmlGeneratorTool;
+import com.switchfully.challenge.tools.impl.CircumferenceCalculatorTool;
+import com.switchfully.challenge.tools.impl.HtmlGeneratorTool;
 
 public class Main {
     public static void main(String[] args) {

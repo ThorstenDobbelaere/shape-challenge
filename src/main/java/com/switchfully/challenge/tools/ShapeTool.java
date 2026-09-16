@@ -1,4 +1,4 @@
-package com.switchfully.challenge.visitors;
+package com.switchfully.challenge.tools;
 
 import com.switchfully.challenge.shapes.Shape;
 import com.switchfully.challenge.shapes.impl.Circle;

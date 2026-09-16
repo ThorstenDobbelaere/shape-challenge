@@ -1,7 +1,7 @@
 package com.switchfully.challenge.shapes.impl;
 
 import com.switchfully.challenge.shapes.Shape;
-import com.switchfully.challenge.visitors.ShapeTool;
+import com.switchfully.challenge.tools.ShapeTool;
 
 public class Circle extends Shape {
 
